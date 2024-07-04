@@ -52,7 +52,7 @@ function studentReg() {
       })
     }
     
-  }, [branchId])
+  }, [branchId, student])
 
   const courses = [
     {label: "GWDD"},
@@ -170,10 +170,10 @@ function studentReg() {
       </Dialog>
 
 
-      <div className=' mt-5 text-end sticky top-4'>
+      <div className=' mt-10 text-end sticky top-8 mr-16'>
         <button onClick={() => setOpen(true)} className='bg-green-500 py-3 px-8 text-white rounded-xl rounded-r-none '>Register the Student</button>
       </div>
-      <div className=' mx-16 mt-16'>
+      <div className=' mx-16 mt-10'>
         <div className='border my-4 grid grid-cols-12 h-auto py-3 shadow-sm'>
             <div className='col-span-2 text-gray-800             mx-2'>Name</div>
             <div className='col-span-3 text-gray-800            '>Email</div>

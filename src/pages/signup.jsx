@@ -93,7 +93,7 @@ function signup() {
                 <div className="w-2/5 bg-gray-800 py-44">
                     <h2 className="text-2xl text-white font-semibold mb-4 text-center">ALREAY USER ?</h2>
                     <p className="text-gray-400 mb-6 text-center w-80 mx-auto">Want to Loginn new Aptech branch !</p>
-                    <div className='text-center'><Link to="/login"><button className="border px-6 py-2 text-white bg-gray-800 rounded-md hover:bg-gray-900 ">
+                    <div className='text-center'><Link to="/"><button className="border px-6 py-2 text-white bg-gray-800 rounded-md hover:bg-gray-900 ">
                         LOGIN BRANCH
                     </button></Link></div>
                 </div>
