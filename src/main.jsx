@@ -12,6 +12,10 @@ import Signup from './pages/signup.jsx'
 
 import Admin from './pages/adminDashboard.jsx'
 import StudentReg from './pages/studentReg.jsx'
+import BatchesReg from './pages/batchesReg.jsx'
+import Demo from './pages/demo.jsx'
+
+import Attendance from './pages/attendance.jsx'
 
 import store from './store/store.js'
 import { Provider } from "react-redux"
@@ -36,12 +40,24 @@ const router = createBrowserRouter([
         element: <AdminLayout />,
         children: [
           {
-            path: 'dashboard',
+            path: '/admin/dashboard',
             element: <Admin />,
           },
           {
-            path: 'student',
+            path: '/admin/student',
             element: <StudentReg />
+          },
+          {
+            path: '/admin/batches',
+            element: <BatchesReg />
+          },
+          {
+            path: '/admin/Attendance',
+            element: <Attendance />
+          },
+          {
+            path: '/admin/demo',
+            element: <Demo />
           },
         ],
       },

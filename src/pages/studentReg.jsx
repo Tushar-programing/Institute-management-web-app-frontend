@@ -173,14 +173,14 @@ function studentReg() {
       <div className=' mt-10 text-end sticky top-8 mr-16'>
         <button onClick={() => setOpen(true)} className='bg-green-500 py-3 px-8 text-white rounded-xl rounded-r-none '>Register the Student</button>
       </div>
-      <div className=' mx-16 mt-10'>
+      <div className=' mx-12 mt-10'>
         <div className='border my-4 grid grid-cols-12 h-auto py-3 shadow-sm'>
-            <div className='col-span-2 text-gray-800             mx-2'>Name</div>
-            <div className='col-span-3 text-gray-800            '>Email</div>
-            <div className='col-span-2 text-gray-800 text-center'>Mobile No</div>
-            <div className='col-span-2 text-gray-800 text-center'>Course</div>
-            <div className='col-span-2 text-gray-800 text-center'>Created At</div>
-            <div className='col-span-1 text-gray-800 text-center'>remove</div>
+            <div className='col-span-2 text-gray-800  mx-2'>Name</div>
+            <div className='col-span-3 text-gray-800 '>Email</div>
+            <div className='col-span-2 text-gray-800 '>Mobile No</div>
+            <div className='col-span-2 text-gray-800 '>Course</div>
+            <div className='col-span-2 text-gray-800 '>Created At</div>
+            <div className='col-span-1 text-gray-800 text-center'>Edit/Remove</div>
         </div>
         {students?.map((stu) => (
           <div key={stu._id} className='border mb-3 shadow-md'>

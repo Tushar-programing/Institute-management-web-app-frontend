@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import img from '../image/logo.jpg'
 import axios from "axios"
 
+import { Link } from 'react-router-dom';
 
 import { branchData as setBranchData } from '../store/branchSlice';
 
@@ -35,9 +36,7 @@ function adminOutlet() {
     }
 
     
-
   return (
-    
     <div className="bg-white w-80 p-4 shadow-md">
         <div className="flex items-center mb-4">
             <img src={img} alt="Logo" className="w-16 h-16 mr-2" />
@@ -65,7 +64,7 @@ function adminOutlet() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <a href="/admin/dashboard" className="font-medium">Dashboard</a>
+                <Link to={"/admin/dashboard"}><a className="font-medium">Dashboard</a></Link>
                 <span className="ml-auto text-xs font-bold bg-blue-500 text-white px-2 py-1 rounded-full">New</span>
             </li>
             <li className="flex items-center py-2 px-3 rounded-md hover:bg-gray-200">
@@ -73,19 +72,19 @@ function adminOutlet() {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5a1 1 0 011-1h4zM11 10a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V11a1 1 0 011-1h4z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 20a1 1 0 01-1 1H7a1 1 0 01-1-1v-2a1 1 0 011-1h13a1 1 0 011 1v2z" />
                 </svg>
-                <a href="/admin/student" className="font-medium">Student Registration</a>
+                <Link to={"/admin/student"}><a className="font-medium">Student Registration</a></Link>
             </li>
             <li className="flex items-center py-2 px-3 rounded-md hover:bg-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.732-.858L3 21l1.867-12.143A2 2 0 015.138 11H18.862a2 2 0 011.732.858L21 3" />
                 </svg>
-                <a href="#" className="font-medium">Form elements</a>
+                <Link to={"/admin/batches"}><a className="font-medium">New Batches</a></Link>
             </li>
             <li className="flex items-center py-2 px-3 rounded-md hover:bg-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.024a2.75 2.75 0 001.425 2.447l1.52 1.122a2.75 2.75 0 003.064-3.192l-1.122-1.52a2.75 2.75 0 00-3.192 3.064l1.122 1.52A2.75 2.75 0 0012 21.025V6.253z" />
                 </svg>
-                <a href="#" className="font-medium">Charts</a>
+                <Link to={"/admin/attendance"}><a className="font-medium">Stu Attendance</a></Link>
             </li>
             <li className="flex items-center py-2 px-3 rounded-md hover:bg-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
